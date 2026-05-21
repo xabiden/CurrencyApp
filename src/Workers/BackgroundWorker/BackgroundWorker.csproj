@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>dotnet-BackgroundWorker-ca4696e9-681c-4d0e-b602-941ae7be9ddd</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\FinanceService\FinanceService.Infrastructure\FinanceService.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\BuildingBlocks\Shared\Shared.csproj" />
+  </ItemGroup>
+</Project>
