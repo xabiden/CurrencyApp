@@ -1,0 +1,33 @@
+@FinanceService.Api_HostAddress = http://localhost:5002
+@token = your_jwt_token_here
+
+### Получить все валюты
+GET {{FinanceService.Api_HostAddress}}/api/currencies
+Authorization: Bearer {{token}}
+
+### Получить избранные валюты
+GET {{FinanceService.Api_HostAddress}}/api/favorites
+Accept: application/json
+Authorization: Bearer {{token}}
+
+### Добавить валюту в избранное по коду
+POST {{FinanceService.Api_HostAddress}}/api/favorites
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "currencyCode": "EUR"
+}
+
+### Добавить валюту в избранное по id
+POST {{FinanceService.Api_HostAddress}}/api/favorites
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "currencyId": "11111111-1111-1111-1111-111111111111"
+}
+
+### Health check
+GET {{FinanceService.Api_HostAddress}}/health
+Accept: application/json
