@@ -1,0 +1,33 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/Shared.Api/Shared.Api.csproj" />
+    <Project Path="src/BuildingBlocks/Shared/Shared.csproj" />
+  </Folder>
+  <Folder Name="/src/Gateway/">
+    <Project Path="src/Gateway/ApiGateway/ApiGateway.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/FinanceService/">
+    <Project Path="src/Services/FinanceService/FinanceService.Api/FinanceService.Api.csproj" />
+    <Project Path="src/Services/FinanceService/FinanceService.Application/FinanceService.Application.csproj" />
+    <Project Path="src/Services/FinanceService/FinanceService.Domain/FinanceService.Domain.csproj" />
+    <Project Path="src/Services/FinanceService/FinanceService.Infrastructure/FinanceService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/UserService/">
+    <Project Path="src/Services/UserService/UserService.Api/UserService.Api.csproj" />
+    <Project Path="src/Services/UserService/UserService.Application/UserService.Application.csproj" />
+    <Project Path="src/Services/UserService/UserService.Domain/UserService.Domain.csproj" />
+    <Project Path="src/Services/UserService/UserService.Infrastructure/UserService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Tools/">
+    <Project Path="src/Tools/MigrationService/MigrationService.csproj" />
+  </Folder>
+  <Folder Name="/src/Workers/">
+    <Project Path="src/Workers/BackgroundWorker/BackgroundWorker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FinanceService.Application.Tests/FinanceService.Tests.csproj" />
+    <Project Path="tests/UserService.Application.Tests/UserService.Tests.csproj" />
+  </Folder>
+</Solution>
